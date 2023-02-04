@@ -6,6 +6,6 @@ def greet(lang):
     else:
         return 'Hello'
 
-print(greet('en'),'Glenn')
-print(greet('es'),'Sally')
-print(greet('fr'),'Michael')
+print(greet('en'),'Glenn!')
+print(greet('es'),'Sally!')
+print(greet('fr'),'Michael!')

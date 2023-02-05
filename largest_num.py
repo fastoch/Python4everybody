@@ -1,6 +1,6 @@
 max = None
 for i in [-20,-80,-10,-65,-32]:
-    if max == None:
+    if max is None:
         max = i
     elif i > max:
         max = i

@@ -1,6 +1,6 @@
 min = None
 for i in [20,80,10,65,32]:
-    if min == None:
+    if min is None:
         min = i
     elif i < min:
         min = i

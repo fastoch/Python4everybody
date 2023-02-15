@@ -1,4 +1,4 @@
-word = input('Enter a word: ')
+word = input('Enter a word: ').lower()
 
 if word == 'banana':
     print('All right, bananas!')

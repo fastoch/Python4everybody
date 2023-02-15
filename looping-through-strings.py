@@ -11,3 +11,13 @@ print()
 fruit = "pineapple"
 for letter in fruit:
     print(letter)
+
+print()
+
+# count the number of times the loop encounters the 'a' character
+word = 'banana'
+count = 0
+for letter in word:
+    if letter == 'a':
+        count += 1
+print(count)

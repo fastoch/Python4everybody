@@ -31,3 +31,7 @@ print(greet2.rstrip()+'!')
 print(greet2.strip()+'!')
 print()
 
+line = 'Please, have a nice day!'
+print(line.startswith('Please')) # returns True
+print(line.startswith('Hello')) # returns False
+print()

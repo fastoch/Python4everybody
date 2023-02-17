@@ -6,7 +6,7 @@ for line in xfile:
 
 print('\n'+'*'*64+'\n')
 
-# alternative to using end=""
+# same thing with rstrip() instead of using end=""
 xfile = open('/home/fastoch/Documents/test.txt')
 for line in xfile:
     line = line.rstrip() # each newline is considered a whitespace and therefore is stripped
@@ -28,5 +28,42 @@ for line in xfile:
     if not line.startswith('spirit'):
         continue
     print(line, end="")
+
+print('\n'+'*'*64+'\n')
+
+# using in to select lines 
+xfile = open('/home/fastoch/Documents/test.txt')
+for line in xfile:
+    line = line.rstrip()
+    if not 'brackets' in line:
+        continue
+    print(line)
+
+print('\n'+'*'*64+'\n')
+
+# prompt for file location
+flocat = input('Enter the file location: ')
+fhand = open(flocat)
+count = 0
+for line in fhand:
+    if 'brackets' in line:
+        count += 1
+print('There were', count, 'lines containing \'brackets\' in', flocat)
+
+print('\n'+'*'*64+'\n')
+
+# Handling bad user input
+flocat = input('Enter the file location: ')
+try:
+    fhand = open(flocat)
+except: 
+    print('File cannot be opened:', flocat)
+    quit() # very important to prevent from executing the rest of the code
+
+count = 0
+for line in fhand:
+    if 'brackets' in line:
+        count += 1
+print('There were', count, 'lines containing \'brackets\' in', flocat)
 
 print('\n'+'*'*64+'\n')

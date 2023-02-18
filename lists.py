@@ -53,3 +53,11 @@ print(sum(nums))
 moy = sum(nums)/len(nums)
 print(moy)
 
+# Strings VS Lists
+abc = 'With three words'
+stuff = abc.split()
+print(stuff)
+print(stuff[0])
+for w in stuff:
+    print(w)
+    

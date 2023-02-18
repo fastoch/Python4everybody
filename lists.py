@@ -61,8 +61,9 @@ print(stuff[0])
 for w in stuff:
     print(w)
 
-# When you do not specify a delimiter, multiple spaces are treated like one delimiter.
-# You can specify what delimiter to use in the splitting
+# When you do not specify a delimiter, multiple spaces are treated like one delimiter
+# by default, split looks for whitespaces as a delimiter, it can be a simple space, multiple spaces, tabs, newlines, etc.
+# But, you can specify what delimiter to use in the splitting
 line = 'A lot           of spaces'
 etc = line.split()
 print(etc)

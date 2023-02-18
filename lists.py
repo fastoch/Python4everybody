@@ -32,3 +32,14 @@ print(stuff)
 stuff.append('cookie')
 print(stuff)
 
+# is something in a list?
+some = ['Sandro',26,32,'Timothée',16]
+print(32 in some)
+print('Aurélie' not in some)
+print('Sandro' in some)
+print(16 not in some)
+
+# Lists are sortable
+friends = ['Rachel','Ross','Monica','Chandler','Joey','Phoebe']
+friends.sort()
+print(friends)

@@ -43,3 +43,13 @@ print(16 not in some)
 friends = ['Rachel','Ross','Monica','Chandler','Joey','Phoebe']
 friends.sort()
 print(friends)
+
+# Built-in Functions and Lists
+nums = [8,16,32,64,128]
+print(len(nums))
+print(max(nums))
+print(min(nums))
+print(sum(nums))
+moy = sum(nums)/len(nums)
+print(moy)
+

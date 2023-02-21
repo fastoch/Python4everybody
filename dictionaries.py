@@ -27,5 +27,30 @@ print(ddd)
 
 print('*'*64)
 
-# One common use of dictionaries is counting how often we see something
+# One common use of dictionaries is counting how often we "see" something
+counts = dict()
+names = ['csev', 'cwen', 'csev', 'zqian', 'cwen']
+for name in names:
+    if name not in counts:
+        counts[name] = 1
+    else:
+        counts[name] += 1
+print(counts)
+
+# The get method for dictionaries
+if name in counts:
+    x = counts[name]
+else: 
+    x = 0
+# The 4 lines above are equivalent to this line:
+x = counts.get(name, 0)
+
+# Simplified counting with get()
+counts = dict()
+names = ['csev', 'cwen', 'csev', 'zqian', 'cwen']
+for name in names:
+    counts[name] = counts.get(name, 0) + 1
+print(counts)
+
+print('*'*64)
 

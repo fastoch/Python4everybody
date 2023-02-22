@@ -74,9 +74,9 @@ name = input('Enter file location: ')
 handle = open(name)
 
 counts = dict()
-for line in handle:
+for line in handle: # for every line in my file
     words = line.split()
-    for word in words:
+    for word in words: # for every word in every line
         counts[word] = counts.get(word, 0) + 1
 
 bigCount = None

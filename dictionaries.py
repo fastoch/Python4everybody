@@ -46,11 +46,16 @@ else:
 x = counts.get(name, 0)
 
 # Simplified counting with get()
+# We can use get() and provide a default value of zero when the key is not yet in the dictionary, 
 counts = dict()
 names = ['csev', 'cwen', 'csev', 'zqian', 'cwen']
 for name in names:
-    counts[name] = counts.get(name, 0) + 1
+    # if exists, increment it by 1
+    # if new, set the count to 1
+    counts[name] = counts.get(name, 0) + 1 
 print(counts)
 
 print('*'*64)
+
+# Counting words in a text
 

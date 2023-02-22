@@ -57,5 +57,12 @@ print(counts)
 
 print('*'*64)
 
-# Counting words in a text
+# Counting words in text - Counting Pattern
+counts = dict()
+line = input('Enter a line of text: ')
+
+words = line.split()
+print('Words:', words)
+
+
 

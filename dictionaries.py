@@ -69,4 +69,22 @@ for word in words:
     counts[word] = counts.get(word, 0) + 1
 print('Counts', counts)
 
+# Finding the most repeated word in a file
+name = input('Enter file location: ')
+handle = open(name)
+
+counts = dict()
+for line in handle:
+    words = line.split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+
+bigCount = None
+bigWord = None
+for word,count in counts.items():
+    if bigCount is None or count > bigCount:
+        bigWord = word
+        bigCount = count
+
+print(bigWord, bigCount)
 

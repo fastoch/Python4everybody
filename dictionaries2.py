@@ -5,5 +5,8 @@ hand = open(fname)
 
 for line in hand:
     line = line.rstrip() # remove whitespace off the right-hand side
-    print(line)
-
+    # print(line)
+    wds = line.split()
+    # print(wds)
+    for w in wds:
+        print(w)

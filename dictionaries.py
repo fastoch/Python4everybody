@@ -79,12 +79,12 @@ for line in handle: # for every line in my file
     for word in words: # for every word in every line
         counts[word] = counts.get(word, 0) + 1
 
-bigCount = None
+bigCount = None 
 bigWord = None
-for word,count in counts.items():
+for word,count in counts.items(): # counts.items() returns key-value pairs of the dictionary, as tuples in a list
     if bigCount is None or count > bigCount:
-        bigWord = word
-        bigCount = count
+        bigWord = word # most repeated word
+        bigCount = count # number of repetitions
 
 print(bigWord, bigCount)
 

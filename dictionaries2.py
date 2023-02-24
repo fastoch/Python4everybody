@@ -1,4 +1,4 @@
-fname = input('Enter file: ')
+fname = input('Enter file location: ')
 # if I just hit Enter, it will select clown.txt 
 if len(fname) < 1 : fname = 'clown.txt'
 hand = open(fname)
@@ -14,9 +14,9 @@ print(counts)
 
 # Now we want to find the most common word
 biggest = 0
-theWord = ''
+theWord = None
 for k,v in counts.items():  # items() returns key,value pairs as a list of tuples
     if v > biggest:
         biggest = v
         theWord = k
-print('Most frequent word is *' + theWord + '*, which is repeated', biggest, 'times')
+print('\nMost frequent word is *' + theWord + '*, which is repeated', biggest, 'times')

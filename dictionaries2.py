@@ -19,4 +19,4 @@ for k,v in counts.items():  # items() returns key,value pairs as a list of tuple
     if v > biggest:
         biggest = v
         theWord = k
-print('\nMost frequent word is *' + theWord + '*, which is repeated', biggest, 'times')
+print('Most frequent word is *' + theWord + '*, which is repeated', biggest, 'times')

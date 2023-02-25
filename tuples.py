@@ -62,6 +62,7 @@ print('Sorted by value and reversed:', valueSortedReversed)
 
 print()
 
+
 # The top 10 most common words
 fhand = open('romeo-full.txt') # open my file
 counts = dict() # create a dictionary for storing each word's count
@@ -82,6 +83,7 @@ for val, key in lst[:10]:
 
 # The split() method splits a string into a list. You can specify the separator, default separator is any whitespace.
 print()
+
 
 # Top 10 most common words - SHORTER VERSION
 fhand = open('romeo-full.txt') 

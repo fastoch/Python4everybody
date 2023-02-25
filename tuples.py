@@ -80,5 +80,17 @@ lst = sorted(lst, reverse=True) # sorting our list by value and reversing the or
 for val, key in lst[:10]:
     print(key, val)
 
-
 # The split() method splits a string into a list. You can specify the separator, default separator is any whitespace.
+print()
+
+# Top 10 most common words - SHORTER VERSION
+fhand = open('romeo-full.txt') 
+counts = dict() 
+for line in fhand:
+    words = line.split() 
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+reversedSortedTuple = sorted([(v,k) for k,v in counts.items()], reverse=True)
+for v,k in reversedSortedTuple[:10]:
+    print(k,v)
+

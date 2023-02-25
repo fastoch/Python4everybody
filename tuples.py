@@ -15,3 +15,22 @@ print()
 t = tuple()
 print('Methods you can use with a tuple:')
 print(dir(t))
+
+print()
+
+# Tuples & Assignment
+(x, y) = (4, 'Fred')
+print(y)
+
+print()
+
+# Tuples & Dictionaries
+d = dict()
+d['fastoch'] = 82
+d['Sandro'] = 16
+for k,v in d.items():
+    print(k, v)
+print()
+# The items() method in dictionaries returns a list of (key,value) tuples
+tups = d.items()
+print(tups)

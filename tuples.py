@@ -49,12 +49,12 @@ for k,v in d.items():
 print()
 
 # Sorting by value instead of key
-valueSorted = list()
+valuesFirst = list()
 for k,v in d.items():
-    valueSorted.append((v,k))
-print('(value, key) instead of (key, value):', valueSorted)
-valueSorted = sorted(valueSorted)
+    valuesFirst.append((v,k))
+print('(value, key) instead of (key, value):', valuesFirst)
+valueSorted = sorted(valuesFirst)
 print('Sorted by value:', valueSorted)
-valueSorted = sorted(valueSorted, reverse=True)
-print('Sorted by value and reversed:', valueSorted)
+valueSortedReversed = sorted(valueSorted, reverse=True)
+print('Sorted by value and reversed:', valueSortedReversed)
 

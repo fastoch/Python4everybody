@@ -53,8 +53,10 @@ valuesFirst = list()
 for k,v in d.items():
     valuesFirst.append((v,k))
 print('(value, key) instead of (key, value):', valuesFirst)
+
 valueSorted = sorted(valuesFirst)
 print('Sorted by value:', valueSorted)
+
 valueSortedReversed = sorted(valueSorted, reverse=True)
 print('Sorted by value and reversed:', valueSortedReversed)
 

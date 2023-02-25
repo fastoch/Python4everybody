@@ -60,3 +60,4 @@ print('Sorted by value:', valueSorted)
 valueSortedReversed = sorted(valueSorted, reverse=True)
 print('Sorted by value and reversed:', valueSortedReversed)
 
+# The top 10 most common words

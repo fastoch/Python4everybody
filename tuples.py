@@ -41,6 +41,7 @@ print()
 d = {'a':10, 'b':1, 'c':22, 'd':16, 'e':8}
 
 # First, we sort the sort the dictionary by key using the items() method and sorted() function
+print('Not sorted:', d.items())
 keySorted = sorted(d.items())
 print('Sorted by key:', keySorted)
 # NB: the sorted() function does not seem necessary, as the items() method already returns a sorted list of tuples

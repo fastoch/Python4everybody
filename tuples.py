@@ -93,7 +93,7 @@ for line in fhand:
     words = line.split() # default separator = whitespace
     for word in words:
         counts[word] = counts.get(word, 0) + 1
-reversedSortedTuple = sorted([(v,k) for k,v in counts.items()], reverse=True)
+reversedSortedTuple = sorted([(v,k) for k,v in counts.items()], reverse=True) # reverse=True is for sorting from highest value to lowest
 for v,k in reversedSortedTuple[:10]:
     print(k,v)
 

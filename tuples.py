@@ -103,3 +103,16 @@ reversedSortedTuple = sorted(
 )  # reverse=True is for sorting from highest value to lowest
 for v, k in reversedSortedTuple[:10]:
     print(k, v)
+
+print()
+
+# same thing with intro.txt as our input file
+fhand = open("intro.txt")
+counts = dict()
+for line in fhand:
+    words = line.split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+reversedSortedTuple = sorted([(v, k) for k, v in counts.items()], reverse=True)
+for v, k in reversedSortedTuple[:10]:
+    print(k, v)

@@ -59,7 +59,13 @@ print()
 
 # Fine tuning string extraction
 mail = "From fastoch@ik.me Sun Mar 5 11:17 2023"
-x = re.findall("\S+@\S+", mail)  # \S+ = at least one non-whitespace character
+x = re.findall("^From \S+@\S+", mail)  # \S+ = at least one non-whitespace character
 print(x)
 y = re.findall("^From (\S+@\S+)", mail) # line starts with 'From' and parentheses delimit the extraction
-print(y) # same result as print(x)
+print(y) 
+z = re.findall('\S+@\S+',mail)
+print(z)
+
+print()
+
+# String Parsing Examples

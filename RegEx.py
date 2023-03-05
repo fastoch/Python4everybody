@@ -68,4 +68,12 @@ print(z)
 
 print()
 
-# String Parsing Examples
+# Extracting the domain name (after @)
+mail = "From fastoch@ik.me Sun Mar 5 11:17 2023"
+x = re.findall("@([^ ]+)", mail)  # look until you find an @ (at sign) and match any non-blank character
+# ^ (caret sign) in between square brackets does not mean 'line starts with', it means 'not', in this case 'not blank'
+print(x)
+
+# extracting the username (before @)
+y = re.findall("([^ ]+)@",mail)
+print(y)

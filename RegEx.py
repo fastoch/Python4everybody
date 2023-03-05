@@ -44,7 +44,7 @@ import re
 
 x = "From: Using the :character"
 y = re.findall("^F.+:", x)
-print(y)
+print(y)  # returns ['From: Using the :']
 
 print()
 
@@ -53,6 +53,11 @@ import re
 
 x = "From: Using the :character"
 y = re.findall("^F.+?:", x)
-print(y)
+print(y)  # returns ['From:']
 
 print()
+
+# Fine tuning string extraction
+mail = "From fastoch@ik.me Sun Mar 5 11:17 2023"
+x = re.findall("\S+@\S+", mail)  # \S+ = at least one non-whitespace character
+print(x)

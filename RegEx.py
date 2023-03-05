@@ -63,7 +63,7 @@ x = re.findall("^From \S+@\S+", mail)  # \S+ = at least one non-whitespace chara
 print(x)
 y = re.findall("^From (\S+@\S+)", mail) # line starts with 'From' and parentheses delimit the extraction
 print(y) 
-z = re.findall('\S+@\S+',mail)
+z = re.findall('\S+@\S+', mail)
 print(z)
 
 print()
@@ -75,5 +75,5 @@ x = re.findall("@([^ ]+)", mail)  # look until you find an @ (at sign) and match
 print(x)
 
 # extracting the username (before @)
-y = re.findall("([^ ]+)@",mail)
+y = re.findall("([^ ]+)@", mail)
 print(y)

@@ -32,3 +32,27 @@ import re
 x = "My 2 favorite numbers are 16 and 82"
 y = re.findall("[0-9]+", x)
 print(y)
+z = re.findall("[aeiou]+", x)
+print(z)
+a = re.findall("[AEIOU]+", x)
+print(a)
+
+print()
+
+# Greedy matching
+import re
+
+x = "From: Using the :character"
+y = re.findall("^F.+:", x)
+print(y)
+
+print()
+
+# Non-greedy matching
+import re
+
+x = "From: Using the :character"
+y = re.findall("^F.+?:", x)
+print(y)
+
+print()

@@ -4,7 +4,7 @@
 hand = open("mbox-short.txt")
 count = 0
 for line in hand:
-    line = line.rstrip()
+    line = line.rstrip() # removes line breaks 
     if line.startswith("From:"):
         print(line)
         count += 1
@@ -77,3 +77,7 @@ print(x)
 # extracting the username (before @)
 y = re.findall("([^ ]+)@", mail)
 print(y)
+
+# extracting the username only when lines start with 'From' 
+z = re.findall("^From ([^ ]+)@", mail)
+print(z)

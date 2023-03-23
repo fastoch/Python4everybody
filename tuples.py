@@ -40,7 +40,7 @@ print()
 # Sorting lists of tuples
 d = {"b": 10, "d": 1, "c": 22, "e": 16, "a": 8}
 
-# First, we sort the sort the dictionary by key using the items() method and sorted() function
+# First, we sort the dictionary by key using the items() method and sorted() function
 print("Not sorted:", d.items())
 keySorted = sorted(d.items())
 print("Sorted by key:", keySorted)
@@ -69,6 +69,7 @@ fhand = open("romeo-full.txt")  # open my file
 counts = dict()  # create a dictionary for storing each word's count
 for line in fhand:
     words = line.split()  # turn each line into a list of words
+# The split() method splits a string into a list. You can specify a separator, default separator being whitespace.
     for word in words:
         counts[word] = counts.get(word, 0) + 1  # initialize or increment counting
 # We transfer our dictionary entries into a list of tuples
@@ -86,8 +87,6 @@ lst = sorted(
 # We print out top 10 most common words and the corresponding count
 for val, key in lst[:10]:
     print(key, val)
-
-# The split() method splits a string into a list. You can specify a separator, default separator being whitespace.
 
 print()
 

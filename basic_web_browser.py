@@ -1,4 +1,4 @@
-import socket # import required library
+import socket # import required library to make a socket
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # make a socket
 mysock.connect(('data.pr4e.org', 80)) # extend the socket and connect it to a web server on port 80

@@ -16,6 +16,8 @@ for line in fhand:
     for word in words:
         counts[word] = counts.get(word, 0) + 1
 
+# the following block is for printing word-number pairs in descending order
+
 liste = list()                          # preparing a list to register our dictionary entries as a list of tuples (a list can be sorted)
 for word, number in counts.items():     # for each entry in our dictionary...
     entry = (number, word)              # ...create a tuple which first element = number of times a word appears
@@ -23,5 +25,5 @@ for word, number in counts.items():     # for each entry in our dictionary...
 liste = sorted(liste, reverse=True)     # sort our list by most frequent word 
 for number,word in liste:
     print(word, number)
-# The items() method returns a view object.
-# The view object contains the key-value pairs of the dictionary, as tuples in a list.
+    
+# The items() method returns a view object which contains the key-value pairs of the dictionary, as tuples in a list.

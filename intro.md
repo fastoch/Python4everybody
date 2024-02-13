@@ -40,24 +40,20 @@ that human minds are designed to solve.  For a computer
 the opposite is true, reading and understanding text 
 from a piece of paper is hard for a computer to do 
 but counting the words and telling you how many times
-the most used word was used is very easy for the
-computer:
+the most used word was used is very easy for the computer.
 
 Our personal information analysis assistant quickly 
 told us that the word to was used sixteen times in the
 first three paragraphs of this chapter.
 
-This very fact that computers are good at things 
-that humans are not is why you need to become
-skilled at talking computer language.  Once you learn
-this new language, you can delegate mundane tasks
-to your partner (the computer), leaving more time 
-for you to do the 
+Computers are good at things that humans are not is 
+why you need to become skilled at talking computer language.  
+Once you learn this new language, you can delegate mundane tasks
+to your partner (the computer), leaving more time for you to do the 
 things that you are uniquely suited for.  You bring 
-creativity, intuition, and inventiveness to this
-partnership.  
+creativity, intuition, and inventiveness to this partnership.  
 
-Creativity and motivation
+# Creativity and motivation
 
 While this book is not intended for professional programmers, professional
 programming can be a very rewarding job both financially and personally.
@@ -80,7 +76,7 @@ your programs.  As you gain skill as a programmer and
 programming feels more creative to you, your thoughts may turn
 toward developing programs for others.
 
-Computer hardware architecture
+# Computer hardware architecture
 
 Before we start learning the language we 
 speak to give instructions to computers to 
@@ -162,8 +158,6 @@ story writing is improved by doing some writing and getting some
 feedback.  In programming, our program is the story and the 
 problem you are trying to solve is the idea.
 
-itemize
-
 Once you learn one programming language such as Python, you will 
 find it much easier to learn a second programming language such
 as JavaScript or C++.  The new programming language has very different 
@@ -184,7 +178,7 @@ We start with the vocabulary and structure of Python programs.  Be patient
 as the simple examples remind you of when you started reading for the first
 time. 
 
-Words and sentences
+# Words and sentences
 
 Unlike human languages, the Python vocabulary is actually pretty small.
 We call this vocabulary the reserved words.  These are words that
@@ -216,9 +210,8 @@ class     exec      in        raise
 continue  finally   is        return             
 def       for       lambda    try
 
-That is it, and unlike a dog, Python is already completely trained.
-When you say try, Python will try every time you say it without
-fail.
+Unlike a dog, Python is already completely trained.
+When you say try, Python will try every time you say it without fail.
 
 We will learn these reserved words and how they are used in good time,
 but for now we will focus on the Python equivalent of speak (in 
@@ -229,7 +222,7 @@ And we have even written our first syntactically correct Python sentence.
 Our sentence starts with the reserved word print followed
 by a string of text of our choosing enclosed in single quotes.
 
-Conversing with Python
+# Conversing with Python
 
 Now that we have a word and a simple sentence that we know in Python,
 we need to know how to start a conversation with Python to test 
@@ -284,7 +277,7 @@ if is a reserved word and Python saw the reserved word
 and thought we were trying to say something but got the syntax
 of the sentence wrong.
 
-Terminology: interpreter and compiler
+# Terminology: interpreter and compiler
 
 Python is a high-level language intended to be relatively
 straightforward for humans to read and write and for computers
@@ -369,20 +362,18 @@ system.   In Windows, the executable machine code for Python itself is likely
 in a file.
 
 That is more than you really need to know to be a Python programmer, but
-sometimes it pays to answer those little nagging questions right at 
-the beginning.
+sometimes it pays to answer those little nagging questions right at the beginning.
 
-Writing a program
+# Writing a program
 
 Typing commands into the Python interpreter is a great way to experiment 
 with Python's features, but it is not recommended for solving more complex problems.
 
 When we want to write a program, 
 we use a text editor to write the Python instructions into a file,
-which is called a script.  By
-convention, Python scripts have names that end with .py.
+which is called a script.  By convention, Python scripts have names that end with .py.
 
-script
+# Script
 
 To execute the script, you have to tell the Python interpreter 
 the name of the file.  In a Unix or Windows command window, 
@@ -396,7 +387,7 @@ You will notice that there was no need to have quit() at the end of
 the Python program in the file.   When Python is reading your source code
 from a file, it knows to stop when it reaches the end of the file.
 
-What is a program?
+# What is a program?
 
 The definition of a program at its most basic is a sequence
 of Python statements that have been crafted to do something.
@@ -442,7 +433,7 @@ instruction sequences (i.e., programs) in a common language that can be used by 
 installs Python on their computer.  So neither of us are talking to Python,
 instead we are communicating with each other through Python.
 
-The building blocks of programs
+# The building blocks of programs
 
 In the next few chapters, we will learn more about the vocabulary, sentence structure,
 paragraph structure, and story structure of Python.  We will learn about the powerful
@@ -453,10 +444,9 @@ There are some low-level conceptual patterns that we use to construct programs. 
 constructs are not just for Python programs, they are part of every programming language
 from machine language up to the high-level languages.
 
-description
+# Getting data from the outside world
 
-Get data from the outside world.  This might be 
-reading data from a file, or even some kind of sensor like 
+This might be reading data from a file, or even some kind of sensor like 
 a microphone or GPS.  In our initial programs, our input will come from the user
 typing data on the keyboard.
 
@@ -464,8 +454,7 @@ Display the results of the program on a screen
 or store them in a file or perhaps write them to a device like a
 speaker to play music or speak text.
 
-Perform statements one after
-another in the order they are encountered in the script.
+Perform statements one after another in the order they are encountered in the script.
 
 Check for certain conditions and
 then execute or skip a sequence of statements.
@@ -477,8 +466,6 @@ some variation.
 Write a set of instructions once and give them a name
 and then reuse those instructions as needed throughout your program.
 
-description
-
 It sounds almost too simple to be true, and of course it is never
 so simple.  It is like saying that walking is simply
 putting one foot in front of the other.  The art 
@@ -489,7 +476,7 @@ that is useful to its users.
 The word counting program above directly uses all of 
 these patterns except for one.
 
-What could possibly go wrong?
+# What could possibly go wrong?
 
 As we saw in our earliest conversations with Python, we must
 communicate very precisely when we write Python code.  The smallest

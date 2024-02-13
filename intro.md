@@ -1,5 +1,5 @@
 
-Why should you learn to write programs?
+# Why should you learn to write programs?
 
 Writing programs (or programming) is a very creative 
 and rewarding activity.  You can write programs for 
@@ -129,7 +129,7 @@ mostly be talking to the CPU and telling it what to
 do next.  Sometimes you will tell the CPU to use the main memory,
 secondary memory, network, or the input/output devices.
 
-You need to be the person who answers the CPU's What next? 
+You need to be the person who answers the CPU's What's next? 
 question.  But it would be very uncomfortable to shrink you 
 down to five mm  tall and insert you into the computer just so you 
 could issue a command three billion times per second.  So instead,
@@ -138,7 +138,7 @@ We call these stored instructions a program and the act
 of writing these instructions down and getting the instructions to 
 be correct programming.
 
-Understanding programming
+# Understanding programming
 
 In the rest of this book, we will try to turn you into a person
 who is skilled in the art of programming.  In the end you will be a 
@@ -146,7 +146,7 @@ programmer --- perhaps not a professional programmer, but
 at least you will have the skills to look at a data/information
 analysis problem and develop a program to solve the problem.
 
-problem solving
+# Problem solving
 
 In a sense, you need two skills to be a programmer:
 

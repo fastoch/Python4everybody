@@ -5,4 +5,4 @@ print()
 
 eur = input('Europe floor? ')
 usf = int(eur) + 1
-print('US floor', usf)
+print('US floor', usf)    

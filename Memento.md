@@ -42,3 +42,12 @@ The except block is only triggered when something goes wrong.
 
 ## Functions (chapter 4)
 
+Keep your code DRY (Don't Repeat Yourself) by using functions.
+```py
+def thing():
+    print('Hello')
+    name = input('What\'s your name? ')
+    print('Nice to meet you '+ name + '!')
+
+thing() # function call
+```

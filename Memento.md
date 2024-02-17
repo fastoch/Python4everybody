@@ -19,9 +19,9 @@ Comments in Python are marked with a pawn sign #
 ## Conditional structure
 
 if :  
-    instructions
+    instructions  
 elif :  
-    instructions
+    instructions  
 else :  
     instructions
 

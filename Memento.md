@@ -13,7 +13,8 @@ Decrease to indicate end of block.
 
 ---
 
-Comments in Python are marked with a pawn sign #
+## Comments 
+In Python, comments are marked with a pawn sign #.
 
 ---
 
@@ -37,4 +38,7 @@ If the code in the try works, then the except is skipped.
 If the code in the try fails, it jumps to the except section.  
 The except block is only triggered when something goes wrong.
 
+---
+
+## Functions (chapter 4)
 

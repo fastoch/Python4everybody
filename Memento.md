@@ -49,5 +49,17 @@ def thing():
     name = input('What\'s your name? ')
     print('Nice to meet you '+ name + '!')
 
-thing() # function call
+thing() # calling (or invoking) the function
 ```
+
+A function is some reusable code that can take arguments as input, does some computation, 
+and then returns a result or results.
+
+There are 2 kinds of functions:
+- **Built-in functions**: print(), input(), type(), float(), int(), string(), etc.
+- **Functions that we define ourselves** and then use.
+
+We treat the built-in function names as **reserved words**.
+
+
+

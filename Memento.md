@@ -16,7 +16,7 @@ Comments in Python are marked with a pawn sign #
 
 ---
 
-## Conditional structures
+## Conditional structure
 
 if :
     instructions
@@ -26,4 +26,14 @@ else :
     instructions
 
 You can have no else.
+
+---
+
+# try & except
+
+Surround a dangerous section of code with a try & except. 
+If the code in the try works, then the except is skipped.
+If the code in the try fails, it jumps to the except section.
+The except block is only triggered when something goes wrong.
+
 

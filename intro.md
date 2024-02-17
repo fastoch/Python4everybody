@@ -506,8 +506,6 @@ understand what you meant, but please keep talking to me (>>>).
 As your programs become increasingly sophisticated, you will encounter three 
 general types of errors:
 
-description
-
 These are the first errors you will make and the easiest
 to fix.  A syntax error means that you have violated the grammar rules of Python.
 Python does its best to point right at the line and character where 
@@ -535,12 +533,10 @@ them written down, it says turn left and go one mile at the gas station.  Then y
 I am very sorry, because while my instructions were syntactically correct, they 
 sadly contained a small but undetected semantic error.. 
 
-description
-
 Again in all three types of errors, Python is merely trying its hardest to 
 do exactly what you have asked.
 
-The learning journey
+# The learning journey
 
 As you progress through the rest of the book, don't be afraid if the concepts 
 don't seem to fit together well the first time.  When you were learning to speak, 

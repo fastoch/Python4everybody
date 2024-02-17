@@ -52,8 +52,13 @@ def thing():
 thing() # calling (or invoking) the function
 ```
 
-A function is some reusable code that can take arguments as input, does some computation, 
+A **function** is some reusable code that can take arguments as input, does some computation, 
 and then returns a result or results.
+
+An **argument** is a value we pass into the function as its input when we call the function.
+
+A **parameter** is a variable which we use in the function definition. It is a "handle" that 
+allows the code in the function to access the arguments for a particular function invocation.
 
 There are 2 kinds of functions:
 - **Built-in functions**: print(), input(), type(), float(), int(), string(), etc.
@@ -61,5 +66,15 @@ There are 2 kinds of functions:
 
 We treat the built-in function names as **reserved words**.
 
+---
 
+## Type conversions
+
+- When you put an integer and floating point in an expression, the integer is **implicitly** 
+converted to a float.
+- You can control this with built-in functions int() and float().
+- You can also use int() and float() to convert strings, but you'll get an error if the string
+does not contain numeric characters.
+
+---
 

@@ -5,6 +5,7 @@ import, in, is, lambda, while, not, or, pass, raise, finally,
 
 ---
 
+## Indentation
 In your text editor, **turn tabs into 4 spaces**
 In python, **indentation** is key. 
 Increase/maintain after if or for.
@@ -17,7 +18,6 @@ Comments in Python are marked with a pawn sign #
 ---
 
 ## Conditional structure
-
 ```py
 if :  
     instructions  
@@ -31,8 +31,7 @@ You can have no else.
 
 ---
 
-# try & except
-
+## try & except
 Surround a dangerous section of code with a try & except.  
 If the code in the try works, then the except is skipped.  
 If the code in the try fails, it jumps to the except section.  

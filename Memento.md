@@ -18,12 +18,14 @@ Comments in Python are marked with a pawn sign #
 
 ## Conditional structure
 
-`if :  
+```py
+if :  
     instructions  
 elif :  
     instructions  
 else :  
-    instructions`
+    instructions
+```
 
 You can have no else.
 

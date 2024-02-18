@@ -88,7 +88,17 @@ does not contain numeric characters.
 
 ---
 
-## Chapter 5 - Loops & iterations
+## Chapter 5 - Loops & iteration
+
+Loops have iteration variables that change each time through a loop.
+```py
+n = 10
+while (n > 0):
+    print(n)
+    n = n-1
+print('Blastoff!')
+print(n)
+```
 
 
 

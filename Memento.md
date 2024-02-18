@@ -53,7 +53,7 @@ thing() # calling (or invoking) the function
 ```
 
 A **function** is some reusable code that can take arguments as input, does some computation, 
-and then returns a result or results.
+and then **returns** a result or results.
 
 An **argument** is a value we pass into the function as its input when we call the function.
 
@@ -65,6 +65,16 @@ There are 2 kinds of functions:
 - **Functions that we define ourselves** and then use.
 
 We treat the built-in function names as **reserved words**.
+
+A "**fruitful**" function is one that produces a result (or return value).
+The **return** statement ends the function execution and sends back a result.
+
+**Void** (non-fruitful) functions do not return a value.
+
+- We can define more than one **parameter** in the function definition.
+- We simply add more **arguments** when we call the function.
+- We must match the number and order of arguments with the parameters.
+- We can declare some parameters as **optional**.
 
 ---
 
@@ -78,3 +88,11 @@ does not contain numeric characters.
 
 ---
 
+## Chapter 5 - Loops & iterations
+
+
+
+
+
+---
+EOF

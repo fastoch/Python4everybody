@@ -14,7 +14,7 @@ Decrease to indicate end of block.
 ---
 
 ## Comments 
-In Python, comments are marked with a pawn sign #.
+In Python, you can comment out a line by adding a pawn sign # before it.
 
 ---
 
@@ -37,6 +37,14 @@ Surround a dangerous section of code with a try & except.
 If the code in the try works, then the except is skipped.  
 If the code in the try fails, it jumps to the except section.  
 The except block is only triggered when something goes wrong.
+```py
+var = input("Enter a number: ")
+try:
+    int(var) # fails if the input is not a number
+    print("The number you entered is "+var) # executed only if you enter a number
+except:
+    print("Not a number!") # executed if you don't enter a number
+```
 
 ---
 
@@ -83,8 +91,7 @@ The **return** statement ends the function execution and sends back a result.
 - When you put an integer and floating point in an expression, the integer is **implicitly** 
 converted to a float.
 - You can control this with built-in functions int() and float().
-- You can also use int() and float() to convert strings, but you'll get an error if the string
-does not contain numeric characters.
+- You can also use int() and float() to convert strings which contain numeric characters.
 
 ---
 
@@ -93,12 +100,61 @@ does not contain numeric characters.
 Loops have iteration variables that change each time through a loop.
 ```py
 n = 10
-while (n > 0):
+while n > 0 :
     print(n)
     n = n-1
 print('Blastoff!')
 print(n)
 ```
+
+The **break** statement ends the current loop and jumps to the statement immediately
+following the loop. It's like a loop test that can happen anywhere in the body of the loop.
+```py
+while True :
+    line = input('> ')
+    if line == 'done' :
+        break
+    print(line)
+print('Done!')
+```
+
+The **continue** statement ends the current iteration and jumps to the top of the loop to start
+the next iteration.
+```py
+while True:
+    line = input('> ')
+    if line[0] == '#' :
+        continue
+    if line == 'done' :
+        break
+    print(line)
+print('Done!') 
+```
+
+While loops are called **indefinite loops** because they keep going until a logical condition becomes False.
+
+### Definite Loops (for)
+
+We can write a loop to run it once for each of the items in a set using the Python **for** construct.
+We say that **definite loops** iterate through the members of a set.
+```py
+for i in [5,4,3,2,1]:
+    print(i)
+print('Blastoff!')
+```
+
+```py
+friends = ['Monica','Rachel','Ross','Joey','Chandler','Phoebe']
+for friend in friends:
+    print('I\'ll be there for you', friend)
+print('\'cause you\'re there for me too')
+```
+
+
+
+---
+
+## Chapter 6 - 
 
 
 

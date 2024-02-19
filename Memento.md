@@ -164,8 +164,63 @@ else:
     print('The largest number is', num)
 ```
 
-#### 
+#### Counting in a loop
+```py
+counter = 0
+print('Before', counter)
+for i in [4, 16, -29, 32]:
+    counter+=1
+    print(counter, i)
+print('After', counter)
+```
 
+#### Summing in a loop
+```py
+total = 0
+print('Before', total)
+for i in [4, 16, -29, 32]:
+    total+=i
+    print(total, i)
+print('After', total)
+```
+
+#### Finding the Average in a loop
+```py
+counter = 0
+total = 0
+print('Counter:', counter, 'Total:', total)
+for i in [4, 16, -29, 32]:
+    counter+=1
+    total+=i
+    print('Counter:', counter, 'added value:', i, 'Total:', total)
+average = total/counter
+print('Counter:', counter, 'Total:', total, 'Average:', average)
+```
+
+#### Filtering in a loop
+```py
+counter = 0
+total = 0
+for value in [7, 36, 42, 1, 16, 33, 64]:
+    if value > 30:
+        print('Greater than 30',value)
+        counter+=1
+    total +=1
+print(counter, 'values', 'out of', total, 'are greater than 30')
+```
+
+### Search using a boolean variable
+```py
+found = False
+print('Is there a Sandro in that list?')
+for name in ['Sandro', 'Aurélie', 'Timothée', 'Fabrice']:
+    if name == 'Sandro':
+        found = True
+if found == True:
+    print('Yes there is.')
+else:
+    print('No there\'s no Sandro in that list.') 
+```
 
 ---
 

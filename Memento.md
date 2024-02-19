@@ -239,7 +239,8 @@ else:
 ### The "is" and "is not" operators
 
 Python has an **is** operator that can be used in logical expressions.
-It means "**is the same as**". It's similar to, but **stronger than ==**.
+It means "**is the same as**".  
+It's similar to, but **stronger than ==**.  
 **is not** is also a logical operator.  
 
 For example:   

@@ -152,19 +152,29 @@ print('\'cause you\'re there for me too')
 
 ### Loop Idioms
 
-#### What is the largest number?
+#### What is the largest|smallest number?
+
 ```py
-largest = -1
-for num in [9,41,12,3,74,15]:
-    if num > largest:
-        largest = num
-if largest == -1:
-    print('I didn\'t find any number larger than -1')
-else:
-    print('The largest number is', num)
+max = None
+for i in [-20,-80,-10,-65,32]:
+    if max is None:
+        max = i
+    elif i > max:
+        max = i
+print("The largest number in the list is: ", max)
+
+# Smallest number
+min = None
+for j in [64,-128,2,0,-16]:
+    if min is None:
+        min = j
+    elif j < min:
+        min = j
+print('The smallest number in the list is: ', min)
 ```
 
 #### Counting in a loop
+
 ```py
 counter = 0
 print('Before', counter)
@@ -175,6 +185,7 @@ print('After', counter)
 ```
 
 #### Summing in a loop
+
 ```py
 total = 0
 print('Before', total)
@@ -185,6 +196,7 @@ print('After', total)
 ```
 
 #### Finding the Average in a loop
+
 ```py
 counter = 0
 total = 0
@@ -198,6 +210,7 @@ print('Counter:', counter, 'Total:', total, 'Average:', average)
 ```
 
 #### Filtering in a loop
+
 ```py
 counter = 0
 total = 0
@@ -209,7 +222,8 @@ for value in [7, 36, 42, 1, 16, 33, 64]:
 print(counter, 'values', 'out of', total, 'are greater than 30')
 ```
 
-### Search using a boolean variable
+#### Search using a boolean variable
+
 ```py
 found = False
 print('Is there a Sandro in that list?')
@@ -222,9 +236,22 @@ else:
     print('No there\'s no Sandro in that list.') 
 ```
 
+### The "is" and "is not" operators
+
+Python has an **is** operator that can be used in logical expressions.
+It means "**is the same as**". It's similar to, but **stronger than ==**.
+**is not** is also a logical operator.  
+
+For example:   
+0 == 0.0 is True  
+0 is 0.0 is False  
+0 is not 0.0 is True
+
+Use "is" **sparingly**. Only use it on **booleans** and on **None**.
+
 ---
 
-## Chapter 6 - 
+## Chapter 6 - Strings
 
 
 

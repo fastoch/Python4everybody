@@ -252,7 +252,28 @@ Use "is" **sparingly**. Only use it on **booleans** and on **None**.
 
 ---
 
-## Chapter 6 - Strings
+## Chapter 6 - String Data Type
+
+- A string is a sequence of characters.  
+- A string literal uses quotes, like 'Hello' or "Hello".  
+- For strings, + means "concatenate". 
+- When a string is made of numeric characters, it is still a string. 
+- We can convert a numeric string into a number using int().
+
+### Reading & Converting
+
+We prefer to read data in using strings, and then parse and convert the data as we need.  
+This gives us more control over error situations and/or bad user input.  
+Raw input numbers must be converted from strings.  
+  
+We can get at any single character in a string using an index specified in square brackets.  
+The index value must be an integer and starts at zero.  
+The index value can be an expression that is computed.  
+
+
+
+
+
 
 
 

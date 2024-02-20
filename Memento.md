@@ -270,6 +270,11 @@ We can get at any single character in a string using an index specified in squar
 The index value must be an integer and starts at zero.  
 The index value can be an expression that is computed.  
 
+- The built-in function **len()** returns the length of the string.
+```py
+fruit = 'banana'
+print(len(fruit))
+```
 
 
 

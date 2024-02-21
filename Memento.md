@@ -270,11 +270,31 @@ We can get at any single character in a string using an index specified in squar
 The index value must be an integer and starts at zero.  
 The index value can be an expression that is computed.  
 
-- The built-in function **len()** returns the length of the string.
+- The built-in function **len()** returns the length of a string.
 ```py
 fruit = 'banana'
 print(len(fruit))
 ```
+
+### Looping through strings
+
+Using a while statement and an iterator, we can construct a loop to look at each character.
+```py
+fruit = 'banana'
+index = 0
+while index < len(fruit):
+    character = fruit[index]
+    print(index, character)
+    index += 1
+```
+
+A definite loop using a for statement is much more elegant.
+```py
+fruit = 'banana'
+for i in fruit:
+    print(i)
+```
+The iterator (iteration variable) is completely taken care of by the for loop.  
 
 
 

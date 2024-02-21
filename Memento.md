@@ -288,14 +288,35 @@ while index < len(fruit):
     index += 1
 ```
 
-A definite loop using a for statement is much more elegant.
+A definite loop using a for statement is much more elegant.  
+The iterator (iteration variable) is completely taken care of by the for loop.  
 ```py
 fruit = 'banana'
 for i in fruit:
     print(i)
 ```
-The iterator (iteration variable) is completely taken care of by the for loop.  
 
+### Looping and counting
+
+```py
+word = 'amazing'
+count = 0
+for letter in word:
+    if letter == 'a':
+        count += 1
+print(count)
+```
+
+### Slicing strings
+
+We can look at any section of a string using a **colon operator**.  
+The second number is one beyond the end of the slice (up to but not including).
+```py
+s = 'Monthy Python'
+print(s[0:4])  # Mont
+print(s[6:8])  # Py
+print(s[6:12]) # Python
+```
 
 
 

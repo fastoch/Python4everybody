@@ -353,10 +353,8 @@ if 'a' in fruit:
 
 ```py
 word = input('Enter a word: ').lower()
-
 if word == 'banana':
     print('All right, bananas!')
-
 if word < 'banana':
     print('Your word, ' + word + ', comes before banana.')
 elif word > 'banana':
@@ -365,9 +363,38 @@ else:
     print('All right, bananas!')
 ```
 
+### String Library
 
+Python has a number of string **functions** which are in the **String Library**.  
+These functions are already built into every string. We invoke them by appending  
+the function to the string variable. Theses functions do not modify the original  
+string, instead they return a new string that has been altered.  
 
+strings are **objects** from the class String, and the functions we can use with strings  
+are called **methods**. We'll see about that when studying OOP - Object-Oriented Programming.  
+  
+```py
+stuff = 'Hello World!'
+type(stuff) # <class 'str'>
+dir(stuff) # displays all the methods we can apply to stuff
+```
 
+### Searching a string
+
+We use the find() function to search for a substring within a string.  
+It finds the first occurrence of the substring.  
+if the substring is not found, find() returns -1.
+
+```py
+fruit = 'banana'
+pos = fruit.find('na')
+print(pos) # 2
+aa = fruit.find('z')
+print(aa) # -1
+```
+
+Often, when we are searching for a string using find(), we first convert the string  
+to lower case so we can search a string regardless of case.
 
 
 ---

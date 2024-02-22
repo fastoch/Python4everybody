@@ -1,3 +1,5 @@
+Timeline: from 0 to 205 min
+
 ## Reserved words: 
 False, True, None, and, as, assert, break, continue, class, if, nonlocal,
 def, del, elif, else, except, return, for, from, global, try, with, yield,
@@ -310,15 +312,26 @@ print(count)
 ### Slicing strings
 
 We can look at any section of a string using a **colon operator**.  
-The second number is one beyond the end of the slice (up to but not including).
+The second number is one beyond the end of the slice - "**up to but not including**".
 ```py
-s = 'Monthy Python'
+s = 'Monty Python'
 print(s[0:4])  # Mont
 print(s[6:8])  # Py
 print(s[6:12]) # Python
 ```
 
+**Note**: The above print statement reads "s sub zero through 4".  
 
+If we leave off the first number or the last number of the slice, it is assumed to be  
+the beginning or the end of the string respectively.
+```py
+s = 'Monty Python'
+print(s[:2]) # Mo
+print(s[8:]) # thon
+print(s[:]) # Monty Python
+```
+
+### Concatenating strings
 
 
 

@@ -328,10 +328,42 @@ the beginning or the end of the string respectively.
 s = 'Monty Python'
 print(s[:2]) # Mo
 print(s[8:]) # thon
-print(s[:]) # Monty Python
+print(s[:])  # Monty Python
 ```
 
-### Concatenating strings
+### Using in as a logical operator
+
+The **in** keyword can also be used to check if one string is **in** another string.  
+In that case, **in** is a logical expression that returns a boolean.
+```py
+fruit = 'banana'
+print('n' in fruit)
+print('m' in fruit)
+print('nan' in fruit)
+
+for i in fruit:
+    if i == 'a':
+        print('Found it!')
+
+if 'a' in fruit:
+    print('This word contains the letter \'a\'.')
+```
+
+### String comparison
+
+```py
+word = input('Enter a word: ').lower()
+
+if word == 'banana':
+    print('All right, bananas!')
+
+if word < 'banana':
+    print('Your word, ' + word + ', comes before banana.')
+elif word > 'banana':
+    print('Your word, ' + word + ', comes after banana.')
+else:
+    print('All right, bananas!')
+```
 
 
 

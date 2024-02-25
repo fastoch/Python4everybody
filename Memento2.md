@@ -127,8 +127,24 @@ for line in fhand:
 print('There were', count, 'subject lines in', fname)
 ```
 
+---
+
 # Chapter 8 - Lists
 
+## Programming
+
+- **Algorithms**: a set of rules or steps used to solve a problem.  
+- **Data Structures**: a particular way of organizing data in a computer.  
+  
+Lists are the first and simplest data structure.
+
+## What is not a "Collection"
+
+Most of our variables have one value in them, and when we put a new value in the variable, the old one is overwritten.  
+A **collection** allows us to put **many values** in **a single variable**.  
+
+A list is a kind of collection.  
+`friends = ['Monica', 'Rachel', 'Chandler', 'Ross']`
 
 
 

@@ -111,23 +111,23 @@ for line in fhand:
 print('There were', count, 'subject lines in', fname)
 ```
 
-### Bad file name
+### Bad user input
 
 ```py
 fname = input('Enter the file name: ')
-
 try:
     fhand = open(fname)
 except:
     print('File \"' + fname + '\" cannot be found.')
-    quit()
-
+    quit() # if you cannot open the file, quit the program
 count = 0
 for line in fhand:
     if line.startswith('Subject:'):
         count+=1
 print('There were', count, 'subject lines in', fname)
 ```
+
+# Chapter 8 - Lists
 
 
 

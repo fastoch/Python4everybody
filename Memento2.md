@@ -78,11 +78,56 @@ for line in fhand:
         print(line)
 ```
 This little program will print lines that start with 'From:', but they also return blank lines.  
-Explanation: each line from the file has a newline at the end. The print statement adds another newline to each line.  
+**Explanation**: each line from the file has a newline at the end. The print statement adds another newline to each line.  
   
+**Fix**: we can strip the whitespace from the right-hand side of the line using **rstrip()** from the string library.  
+The newline is considered whitespace and is stripped.
+```py
+fhand = open('mbox.txt')
+for line in fhand:
+    if line.startswith('From:'):
+        print(line.rstrip())
+```
 
+### Using **in** to select lines 
 
+We can look for a string anywhere in a line as our selection criteria.
+```py
+fhand = open('mbox.txt')
+for line in fhand:
+    if '@uct.ac.za' in line:
+        print(line.rstrip())
+```
 
+### Prompt for file name
+
+```py
+fname = input('Enter the file name: ')
+fhand = open(fname)
+count = 0
+for line in fhand:
+    if line.startswith('Subject:'):
+        count+=1
+print('There were', count, 'subject lines in', fname)
+```
+
+### Bad file name
+
+```py
+fname = input('Enter the file name: ')
+
+try:
+    fhand = open(fname)
+except:
+    print('File \"' + fname + '\" cannot be found.')
+    quit()
+
+count = 0
+for line in fhand:
+    if line.startswith('Subject:'):
+        count+=1
+print('There were', count, 'subject lines in', fname)
+```
 
 
 

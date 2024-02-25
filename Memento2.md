@@ -78,7 +78,7 @@ for line in fhand:
         print(line)
 ```
 This little program will print lines that start with 'From:', but they also return blank lines.  
-Each line from the file has a newline at the end. The print statement adds a newline to each line.  
+Explanation: each line from the file has a newline at the end. The print statement adds another newline to each line.  
   
 
 

@@ -27,6 +27,61 @@ We represent it as **\n** in strings. Newline is still one character, not two.
   
 A text file has newlines at the end of each line.  
 
+## Reading files in Python
+
+### File Handle as a Sequence
+
+A file handle open for read can be treated as a sequence of strings where each line  
+in the file is a string in the sequence. We can use the **for** statement to iterate  
+through a sequence. Remember - a sequence is an **ordered set**.
+
+```py
+xfile = open('mbox.txt')
+for cheese in xfile:
+    print(cheese) # for each line in the file handle, print out the current line 
+```
+
+Other languages like C or C++ require to write while loops with end of file (EOF)  
+conditions and all kinds of things that make this very difficult.
+  
+### Counting lines in a file
+
+- open a file read-only
+- use a for loop to read each line
+- count the lines and print out the result
+
+```py
+fhand = open('mbox.txt')
+count = 0
+for line in fhand:
+    count += 1
+print('Line count:', count)
+```
+
+### Reading the *whole* file
+
+We can read the whole file (newlines and all) into a single string.
+```py
+fhand = open('mbox.txt')
+inp = fhand.read() # store the file as one big string
+print(len(inp))
+print(inp[:20]) # print the first 20 characters, from index 0 to 19
+```
+
+### Searching through a file
+
+We can put an if statement in a for loop to only print lines that meet some criteria.
+```py
+fhand = open('mbox.txt')
+for line in fhand:
+    if line.startswith('From:'):
+        print(line)
+```
+
+
+
+
+
 
 
 ---

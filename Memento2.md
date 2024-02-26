@@ -161,8 +161,22 @@ Lists are **mutable**, we can change an element of a list using the index operat
 The **len()** function takes a list as a parameter and returns the number of elements in the list.  
 Actually, **len()** tells us the number of elements of any set or sequence.
 
-tt
+## Using the range() function
 
+The range() function returns a list of numbers that range from zero to one less than the parameter.
+We can construct an index loop using **for** and an integer **iterator**.
+
+2 for loops that achieve the same result:
+```py
+friends = ['Monica', 'Rachel', 'Chandler', 'Ross']
+for friend in friends:
+    print('Hello', friend)
+for i in range(len(friends)):
+    friend = friends[i]
+    print('Hello', friend)
+```
+
+## Loop operations
 
 
 

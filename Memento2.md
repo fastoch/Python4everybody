@@ -159,7 +159,9 @@ Lists are **mutable**, we can change an element of a list using the index operat
 `friends[1] = 'Phoebe'`
 
 The **len()** function takes a list as a parameter and returns the number of elements in the list.  
+Actually, **len()** tells us the number of elements of any set or sequence.
 
+tt
 
 
 

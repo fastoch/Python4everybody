@@ -138,13 +138,31 @@ print('There were', count, 'subject lines in', fname)
   
 Lists are the first and simplest data structure.
 
-## What is not a "Collection"
+## What is a "Collection"
 
 Most of our variables have one value in them, and when we put a new value in the variable, the old one is overwritten.  
 A **collection** allows us to put **many values** in **a single variable**.  
 
-A list is a kind of collection.  
+A list is a kind of collection: 
 `friends = ['Monica', 'Rachel', 'Chandler', 'Ross']`
+
+List constants are surrounded by square brackets and the elements in the list are separated by commas.
+- A list element can be any Python object, even another list.  
+- A list can be empty.  
+- A list can contain different types of data.  
+  
+Just like strings, we can get any single element in a list using an index specified in square brackets.
+`print friends[1]`
+
+Strings are **immutable**, we cannot change the contents of a string. We must make a new string.  
+Lists are **mutable**, we can change an element of a list using the index operator.
+`friends[1] = 'Phoebe'`
+
+The **len()** function takes a list as a parameter and returns the number of elements in the list.  
+
+
+
+
 
 
 

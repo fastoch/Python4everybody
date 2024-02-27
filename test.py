@@ -1,3 +1,3 @@
-x = list()
-print(type(x))
-print(dir(x))
+friends = ['Sally', 'Billy', 'Harry']
+friends.sort()
+print(friends)

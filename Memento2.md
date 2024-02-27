@@ -188,7 +188,7 @@ c = a + b
 print(c)
 ```
 
-### Slicing lists using the colon operator **:**
+### Slicing lists using the colon operator ":"
 
 ```py
 t = [9,41,12,3,74,15]
@@ -221,10 +221,23 @@ print(stuff)
 
 ### Is something in a list?
 
-Python provides 2 operators that let you check if an item is in a list.
-These are logical operators that return True or False.
+Python provides 2 operators that let you check if an item is in a list.  
+These are logical operators that return True or False.  
 They do not modify the list.
+```py
+some = [1,9,21,10,16]
+print(9 in some)
+print(15 in some)
+print(20 not in some)
+```
 
+### Sorting lists
+
+```py
+friends = ['Sally', 'Billy', 'Harry']
+friends.sort()
+print(friends) # ['Billy', 'Harry', 'Sally']
+```
 
 
 

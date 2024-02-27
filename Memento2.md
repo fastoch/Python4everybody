@@ -224,6 +224,7 @@ print(stuff)
 Python provides 2 operators that let you check if an item is in a list.  
 These are logical operators that return True or False.  
 They do not modify the list.
+
 ```py
 some = [1,9,21,10,16]
 print(9 in some)
@@ -238,6 +239,36 @@ friends = ['Sally', 'Billy', 'Harry']
 friends.sort()
 print(friends) # ['Billy', 'Harry', 'Sally']
 ```
+
+**Remember**: strings are not mutable, but lists are mutable.  
+String methods like upper() or lower() create a new string, while sort() does not create a new list.
+
+### Built-in functions & Lists
+
+There are a number of functions built into Python that take lists as parameters.  
+```py
+nums = [3,41,12,9,74,15]
+print(len(nums))
+print(max(nums))
+print(min(nums))
+print(sum(nums))
+print(sum(nums)/len(nums))
+```
+
+## Strings vs. Lists
+
+**Split()** breaks a string into parts and produces a list of strings.  
+We think of these as words. We can access a particular word or loop through all the words.
+```py
+abc = 'With three words'
+stuff = abc.split()
+print(stuff)
+print(len(stuff))
+print(stuff[0])
+for w in stuff:
+    print(w)
+```
+
 
 
 

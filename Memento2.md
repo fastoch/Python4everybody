@@ -178,6 +178,53 @@ for i in range(len(friends)):
 
 ## Loop operations
 
+### Concatening lists using +
+
+We can create a new list by adding 2 existing lists together:
+```py
+a = [1,2,3]
+b = [4,5,6]
+c = a + b
+print(c)
+```
+
+### Slicing lists using the colon operator **:**
+
+```py
+t = [9,41,12,3,74,15]
+print(t[1:3]) # [41,12]
+print(t[:4])
+print(t[3:])
+```
+**Remember**: just like in strings, the second number is "up to but not including". 
+
+## List Methods
+
+```py
+x = list()
+print(type(x)) # <class 'list'>
+print(dir(x)) # lists all methods available for an object of class 'List'
+```
+
+### Building a list from scratch
+
+We can create an empty list and then add elements using the **append()** method.  
+The list stays in order and new elements are added at the end of the list.
+```py
+stuff = list()
+stuff.append('book')
+stuff.append(99)
+print(stuff)
+stuff.append('cookie')
+print(stuff)
+```
+
+### Is something in a list?
+
+Python provides 2 operators that let you check if an item is in a list.
+These are logical operators that return True or False.
+They do not modify the list.
+
 
 
 

@@ -269,6 +269,21 @@ for w in stuff:
     print(w)
 ```
 
+When you do not specify a **delimiter**, split() looks for white spaces (tabs, newlines, spaces).  
+Multiple spaces are treated like a single one.
+You can specify what delimiter character to use in the **splitting**.  
+```py
+line = 'A lot         of spaces'
+etc = line.split()
+print(etc)
+line = 'first;second;third'
+thing = line.split()
+print(thing)
+print(len(thing))
+thing = line.split(';')
+print(thing)
+print(len(thing))
+```
 
 
 

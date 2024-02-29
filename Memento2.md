@@ -285,6 +285,18 @@ print(thing)
 print(len(thing))
 ```
 
+**Filter emails** received in **January** and print the sender (2nd word in the line):
+```py
+fhand = open('mbox.txt')
+for line in fhand:
+    if not line.startswith('From') : continue # ignore lines not starting with 'From'
+    if 'Jan' in line:
+        words = line.split()
+        print(words[1])
+```
+
+
+
 
 
 
